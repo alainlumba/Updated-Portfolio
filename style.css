@@ -63,7 +63,6 @@ nav ul li a:hover {
 .col-1 h3 {
     font-size: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
