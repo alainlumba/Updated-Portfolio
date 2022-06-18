@@ -47,7 +47,7 @@ nav ul li a:hover {
 	justify-content: space-between;
 	align-items: center;
 	margin: 100px 0;
-	flex-wrap: wrap;
+
 }
 
 .col-1 {
@@ -63,8 +63,6 @@ nav ul li a:hover {
 .col-1 h3 {
     font-size: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	flex-wrap: wrap;
-	flex-direction: column;
 }
 span{
     color: gold;
