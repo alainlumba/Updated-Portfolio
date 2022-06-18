@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#certifications">CERTIFICATIONS</a></li>
+                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Hello, my name is</h2>
+                <h3>ALAIN LUMBA</h3>
+                <h4>I' am a <span>Web Developer</span></h4>
+            </div>
+            <div class="col-2"></div>
+
+        </div>
+    </div>
+
+    <div class="about-section" id="about">
+        <div class="about-container">
+            <h5>ABOUT</h5>
+            <br>
+            <img src="images/uniform.jpg" class="uniform">
+
+            <div class="about-text">
+                I am a fresh graduate from our lady of fatima university. I chose this field of study
+                because
+                I've been always interested in technology and how life makes easier. Specially when I
+                challenge
+                myself to learn more
+                about what is web development.
+                <br><br>
+                I like doing some graphic designs and editing some animations but,
+                <br><br>
+                Currently, Im studying hard about being a front end developer.
+                I feel that i can manage this position where i can effectively show my skills.
+                <br><br>
+                These are the languages and some toolset that i used to.
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="skills">
+
+        <div class="single-skills"> <img src="SKILLS/ps.png"></div>
+        <div class="single-skills"> <img src="SKILLS/ai.png"> </div>
+        <div class="single-skills"> <img src="SKILLS/id.png"></div>
+        <div class="single-skills"> <img src="SKILLS/dn.png"></div>
+        <div class="single-skills"> <img src="SKILLS/html.png"></div>
+        <div class="single-skills"> <img src="SKILLS/css.png"></div>
+        <div class="single-skills"> <img src="SKILLS/js.png"></div>
+        <div class="single-skills"> <img src="SKILLS/vs.png"></div>
+        <div class="single-skills"> <img src="SKILLS/wp.png"></div>
+        <div class="single-skills"> <img src="SKILLS/php.png"></div>
+
+    </div>
+
+
+    <div class="works-section" id="works">
+        <div class="works-container">
+            <br>
+            <br>
+
+            <h6>WORKS</h6>
+
+            <br>
+
+            <div class="works-webdesign">
+
+                <div class="webdesign-img"> <img src="WORKS/w1.jpg" alt=""></div>
+                <div class="webdesign-img"> <img src="WORKS/w2.jpg" alt=""></div>
+                <div class="webdesign-img"> <img src="WORKS/w3.jpg" alt=""></div>
+                <div class="webdesign-img"> <img src="WORKS/w4.jpg" alt=""></div>
+            </div>
+
+            <div class="works-webdesign">
+
+                <div class="webdesign-img"> <img src="WORKS/TE LOGO.jpg" alt=""></div>
+                <div class="webdesign-img"> <img src="WORKS/OFFICIAL LOGO.png" alt=""></div>
+                <div class="webdesign-img"> <img src="WORKS/Lakers board final.jpg" alt=""></div>
+                <div class="webdesign-img"> <img src="WORKS/lakers black.jpg" alt=""></div>
+            </div>
+
+            <div class="works-webdesign">
+
+                <div class="webdesign-img"> <img src="WORKS/FINAL POSTER 2.jpg" alt=""></div>
+                <div class="webdesign-img"> <img src="WORKS/BRGY CHOICE.jpg" alt=""></div>
+                <div class="webdesign-img"> <img src="WORKS/TE POSTER 2.jpg" alt=""></div>
+                <div class="webdesign-img"> <img src="WORKS/TE POSTER.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="certifications-section" id="certifications">
+            <div class="certifications-container">
+                <br>
+                <br>
+
+                <h6>CERTIFICATIONS</h6>
+
+                <div class="certifications">
+
+                    <div class="certificaitions-img"> <img src="CERTIFICATIONS/VGD NCIII.jpg" alt=""></div>
+                    <div class="certificaitions-img"> <img src="CERTIFICATIONS/UIUX.JPG" alt=""></div>
+                    <div class="certificaitions-img"> <img src="CERTIFICATIONS/WEBDEV.JPG" alt=""></div>
+                </div>
+
+                <div class="certifications-section" id="certifications">
+                    <div class="certifications-container">
+                        <br>
+                        <br>
+
+                        <h6>RESUME</h6>
+
+                        <div class="certifications">
+
+                            <div class="certificaitions-img">
+                                <a href="resume/Latest CV.pdf"> <img src="resume/resumee.JPG" alt=""></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <script>
+                    var menulist = document.getElementById("menulist");
+
+                    menulist.style.maxHeight = "0px";
+
+                    function togglemenu() {
+
+                        if (menulist.style.maxHeight == "0px") {
+                            menulist.style.maxHeight = "170px";
+                        }
+                        else {
+                            menulist.style.maxHeight = "0px";
+                        }
+                    }
+
+                </script>
+
+</body>
+
+</html>
