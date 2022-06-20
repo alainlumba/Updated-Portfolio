@@ -332,6 +332,18 @@ input[type="submit"]:hover {
 	object-fit: cover;
 }
 
+
+/* CONTACT-SECTION */
+
+.right h11{
+	font-size: 40px;
+}
+
+.right h12 {
+	
+}
+
+
 @media (max-width: 768px) {
 	.container .popup-image img {
 		width: 95%;
