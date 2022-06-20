@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <div class="navbar">
+        <div class="navbar" id="home">
             <img src="images/logo.png" class="logo">
             <nav>
                 <ul id="menulist">
@@ -31,6 +31,8 @@
                 <h2>Hello, my name is</h2>
                 <h3>ALAIN LUMBA</h3>
                 <h4>I' am a <span>Web Developer</span></h4>
+                <br>
+                <a href="RESUME/Latest CV.pdf" download="cv"> <button type="button">Download CV</button></a>
             </div>
             <div class="col-2"></div>
 
@@ -85,32 +87,39 @@
 
             <h6>WORKS</h6>
 
-            <br>
+            <div class="con">
 
-            <div class="works-webdesign">
+                <div class="image-container">
+                    <div class="image"> <img src="WORKS/w1.jpg" alt=""></div>
+                    <div class="image"> <img src="WORKS/w2.jpg" alt=""></div>
+                    <div class="image"> <img src="WORKS/w3.jpg" alt=""></div>
+                    <div class="image"> <img src="WORKS/w4.jpg" alt=""></div>
+                </div>
 
-                <div class="webdesign-img"> <img src="WORKS/w1.jpg" alt=""></div>
-                <div class="webdesign-img"> <img src="WORKS/w2.jpg" alt=""></div>
-                <div class="webdesign-img"> <img src="WORKS/w3.jpg" alt=""></div>
-                <div class="webdesign-img"> <img src="WORKS/w4.jpg" alt=""></div>
-            </div>
+                <div class="image-container">
+                    <div class="image"> <img src="WORKS/TE LOGO.jpg" alt=""></div>
+                    <div class="image"> <img src="WORKS/OFFICIAL LOGO.png" alt=""></div>
+                    <div class="image"> <img src="WORKS/Lakers board final.jpg" alt=""></div>
+                    <div class="image"> <img src="WORKS/lakers black.jpg" alt=""></div>
+                </div>
 
-            <div class="works-webdesign">
+                <div class="image-container">
+                    <div class="image"> <img src="WORKS/FINAL POSTER 2.jpg" alt=""></div>
+                    <div class="image"> <img src="WORKS/BRGY CHOICE.jpg" alt=""></div>
+                    <div class="image"> <img src="WORKS/TE POSTER 2.jpg" alt=""></div>
+                    <div class="image"> <img src="WORKS/TE POSTER.jpg" alt=""></div>
+                </div>
 
-                <div class="webdesign-img"> <img src="WORKS/TE LOGO.jpg" alt=""></div>
-                <div class="webdesign-img"> <img src="WORKS/OFFICIAL LOGO.png" alt=""></div>
-                <div class="webdesign-img"> <img src="WORKS/Lakers board final.jpg" alt=""></div>
-                <div class="webdesign-img"> <img src="WORKS/lakers black.jpg" alt=""></div>
-            </div>
-
-            <div class="works-webdesign">
-
-                <div class="webdesign-img"> <img src="WORKS/FINAL POSTER 2.jpg" alt=""></div>
-                <div class="webdesign-img"> <img src="WORKS/BRGY CHOICE.jpg" alt=""></div>
-                <div class="webdesign-img"> <img src="WORKS/TE POSTER 2.jpg" alt=""></div>
-                <div class="webdesign-img"> <img src="WORKS/TE POSTER.jpg" alt=""></div>
+                <div class="popup-image">
+                    <span>&times;</span>
+                    <img src="WORKS/w1.jpg" alt="">
+                </div>
             </div>
         </div>
+
+        <br>
+        <br>
+        <br>
 
         <div class="certifications-section" id="certifications">
             <div class="certifications-container">
@@ -118,50 +127,138 @@
                 <br>
 
                 <h6>CERTIFICATIONS</h6>
+                <div class="con">
 
-                <div class="certifications">
+                    <div class="image-container">
+                        <div class="image"> <img src="CERTIFICATIONS/VGD NCIII.jpg" alt=""></div>
+                        <div class="image"> <img src="CERTIFICATIONS/UIUX.JPG" alt=""></div>
+                        <div class="image"> <img src="CERTIFICATIONS/WEBDEV.JPG" alt=""></div>
+                    </div>
 
-                    <div class="certificaitions-img"> <img src="CERTIFICATIONS/VGD NCIII.jpg" alt=""></div>
-                    <div class="certificaitions-img"> <img src="CERTIFICATIONS/UIUX.JPG" alt=""></div>
-                    <div class="certificaitions-img"> <img src="CERTIFICATIONS/WEBDEV.JPG" alt=""></div>
+                    <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="WORKS/w1.jpg" alt="">
+                    </div>
+
                 </div>
 
-                <div class="resume-section" id="resume">
-                    <div class="resume-container">
-                        <br>
-                        <br>
+            </div>
+        </div>
 
-                        <h6>RESUME</h6>
+<br><br><br>
 
-                        <div class="certifications">
 
-                            <div class="resume-img">
-                                <a href="resume/Latest CV.pdf"> <img src="resume/resumee.JPG" alt=""></a>
-                            </div>
+        <div class="resume-section" id="resume">
+            <div class="resume-container">
+                <br>
+                <br>
 
-                        </div>
+                <h6>RESUME</h6>
+
+                <div class="con">
+
+                    <div class="image-container">
+                        <div class="image"> <img src="RESUME/RESUME.JPG" alt=""></div>
+
+                    </div>
+
+                    <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="WORKS/w1.jpg" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="contact-container" id="contact">
+
+            <h1>CONTACT</h1>
+
+            <div class="input-container">
+
+                <div class="left">
+                    <form action="/action_page.php">
+
+                        <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+
+                        <input type="text" id="lname" name="lastname" placeholder="Your Email">
+
+                        <input type="text" id="lname" name="lastname" placeholder="Subject">
+
+                        <textarea id="subject" name="subject" placeholder="Message" style="height:170px"></textarea>
+                        <input type="submit" value="Send Message">
+
+                    </form>
+
+                </div>
+                <div class="right">
+                    <h2>GET IN TOUCH</h2>
+                    <br><br>
+                    <h3>Location:</h3>
+                    <h3>#179, Purok 4, San Jose Magalang Pampanga</h3>
+                    <br><br>
+                    <h3>+639971957790</h3>
+                    <br><br>
+                    <h3>alumba1220@gmail.com</h3>
+                    <br><br>
+                    <h3>FOLLOW ME:</h3>
+                    <a href="https://www.facebook.com/alain.huskar20"> <img src="Contact/fb.png" alt=""></a>
+                    <img src="contact/ig.png" alt="">
+                    <img src="contact/indeed.png" alt="">
+                    <img src="contact/gh.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="con">
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="WORKS/w1.jpg" alt="">
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
 
 
 
 
-                <script>
-                    var menulist = document.getElementById("menulist");
 
-                    menulist.style.maxHeight = "0px";
+    <script>
+        var menulist = document.getElementById("menulist");
 
-                    function togglemenu() {
+        menulist.style.maxHeight = "0px";
 
-                        if (menulist.style.maxHeight == "0px") {
-                            menulist.style.maxHeight = "170px";
-                        }
-                        else {
-                            menulist.style.maxHeight = "0px";
-                        }
-                    }
+        function togglemenu() {
 
-                </script>
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "170px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
 
 </body>
 

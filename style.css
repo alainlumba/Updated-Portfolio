@@ -36,18 +36,18 @@ nav ul li {
 }
 nav ul li a {
 	text-decoration: none;
-	color: green;
+	color: gold;
 	font-size: 14px;
+	
 }
 nav ul li a:hover {
-	color: rgb(34, 140, 64);
+	color: rgb(0, 0, 0);
 }
 .row {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 100px 0;
-
 }
 
 .col-1 {
@@ -56,46 +56,35 @@ nav ul li a:hover {
 	margin-left: 50px;
 }
 .col-1 h2 {
-    color:gold;
-    font-size: 20px;
+	color: gold;
+	font-size: 20px;
 }
 
 .col-1 h3 {
-    font-size: 100px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 90px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-span{
-    color: gold;
+span {
+	color: gold;
 }
 
 .col-1 h4 {
-    font-size: 30px;
-    
+	font-size: 30px;
 }
 
-
 button {
-	width: 140px;
+	width: 110px;
 	border: 0;
 	padding: 12px 10px;
 	outline: none;
-	color: blue;
-	background: linear-gradient(to right, red yellow);
+	color: rgb(0, 0, 0);
+	background-color: rgba(182, 161, 9, 0.578);
 	border-radius: 6px;
 	cursor: pointer;
 }
-button img {
-	width: 30px;
-	display: none;
-}
-button:hover img {
-	display: block;
-}
+
 button:hover {
-	width: 160px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	background-color: #1da30eb7;
 }
 
 .col-1::after {
@@ -178,8 +167,6 @@ h6 {
 	color: #790a0a;
 	text-align: center;
 }
-.work-container h8 
-
 .work-container {
 	align-items: center;
 	margin: 35px auto;
@@ -188,8 +175,7 @@ h6 {
 	flex-wrap: wrap;
 }
 
-
-.works-webdesign  {
+.works-webdesign {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -201,15 +187,14 @@ h6 {
 	align-items: center;
 	width: 270px;
 	height: 270px;
-	padding: 10px;	
+	padding: 10px;
 }
-
 .certifications {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;	
+	justify-content: center;
 }
 
 .certifications img {
@@ -217,11 +202,150 @@ h6 {
 	align-items: center;
 	width: 400px;
 	height: 500px;
-	padding: 10px;	
+	padding: 10px;
 }
 
+.resume-container {
+	background-color: rgb(255, 255, 255);
+}
 
+.contact-container {
+	flex-wrap: wrap;
+	background: url("images/top1.jpg") no-repeat center top;
+	background-size: cover;
+	background-position: center;
+	min-height: 550px;
+}
 
+h1 {
+	font-size: 2.5em;
+	font-family: "Arvo", serif;
+	text-transform: uppercase;
+	font-weight: 400px;
+	color: #7c0808;
+	text-align: center;
+}
+
+input[type="text"],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type="submit"] {
+	background-color: #04aa6d;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+.input-container {
+	margin: 55px auto;
+	width: 60%;
+	flex-wrap: wrap;
+}
+
+/* Style the container/contact section */
+
+/* Create two columns that float next to eachother */
+.left {
+	float: left;
+	width: 40%;
+}
+
+.right {
+	text-align: center;
+}
+
+.right img {
+	width: 40px;
+	height: 40px;
+}
+
+/* IMAGE MODAL */
+
+.con {
+	position: relative;
+	background: #595b5a5d;
+}
+.con .image-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+	padding: 10px;
+}
+.con .image-container .image {
+	height: 250px;
+	width: 350px;
+	border: 5px solid #fff;
+	box-shadow: 0 5px 15 px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	cursor: pointer;
+}
+.con .image-container .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: 0.2s linear;
+}
+.con .image-container .image:hover img {
+	transform: scale(1.1);
+}
+.con .popup-image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgb(0, 0, 0, 0.9);
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	display: none;
+}
+.con .popup-image span {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 60px;
+	font-weight: bolder;
+	color: #fff;
+	cursor: pointer;
+	z-index: 100;
+}
+.con .popup-image img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 5px solid #fff;
+	border-radius: 5px;
+	width: 600px;
+	object-fit: cover;
+}
+
+@media (max-width: 768px) {
+	.container .popup-image img {
+		width: 95%;
+	}
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.left,
+	input[type="submit"] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
 
 @media only screen and (max-width: 700px) {
 	nav ul {
