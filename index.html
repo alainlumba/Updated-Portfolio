@@ -10,8 +10,9 @@
 </head>
 
 <body>
+<header id="header">
     <div class="container">
-        <div class="navbar" id="home">
+        <div class="navbar" id="home"> 
             <img src="images/logo.png" class="logo">
             <nav>
                 <ul id="menulist">
@@ -20,25 +21,27 @@
                     <li><a href="#works">WORKS</a></li>
                     <li><a href="#certifications">CERTIFICATIONS</a></li>
                     <li><a href="#resume">RESUME</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+
                 </ul>
             </nav>
             <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
 
         </div>
+   
         <div class="row">
             <div class="col-1">
-                <h2>Hello, my name is</h2>
-                <h3>ALAIN LUMBA</h3>
-                <h4>I' am a <span>Web Developer</span></h4>
-                <br>
-                <a href="RESUME/Latest CV.pdf" download="cv"> <button type="button">Download CV</button></a>
+                <h3>I'm <span class="auto-input"></span></h3>
+                <h4>You can reach out to me if you need any help in making a website for you or your business.</h4>
+                <a href="#contact">CONTACT ME</a>
+                <a href="RESUME/Latest CV.pdf" class="btn" download="cv"> DOWNLOAD CV</a>
             </div>
             <div class="col-2"></div>
 
         </div>
+      
     </div>
-
+    </div>
+</header>
     <div class="about-section" id="about">
         <div class="about-container">
             <h5>ABOUT</h5>
@@ -209,14 +212,14 @@
                     <img src="Contact/email.png" alt="">
                     <br>
                     <h15>alumba1220@gmail.com</h16>
-                    <br><br>
-                    <h16>FOLLOW ME:</h16>
-                    <br><br>
-                    <a href="https://www.facebook.com/alain.huskar20"> <img src="Contact/fb.png" alt=""></a>
-                    <a href="https://www.instagram.com/alainlumba/"><img src="contact/ig.png" alt=""></a>
-                    <a href="https://my.indeed.com/resume?hl=en&co=PH&from=gnav-resume--myind"><img
-                            src="contact/indeed.png" alt=""></a>
-                    <a href="https://github.com/alainlumba"><img src="contact/gh.png" alt=""></a>
+                        <br><br>
+                        <h16>FOLLOW ME:</h16>
+                        <br><br>
+                        <a href="https://www.facebook.com/alain.huskar20"> <img src="Contact/fb.png" alt=""></a>
+                        <a href="https://www.instagram.com/alainlumba/"><img src="contact/ig.png" alt=""></a>
+                        <a href="https://my.indeed.com/resume?hl=en&co=PH&from=gnav-resume--myind"><img
+                                src="contact/indeed.png" alt=""></a>
+                        <a href="https://github.com/alainlumba"><img src="contact/gh.png" alt=""></a>
                 </div>
             </div>
 
@@ -233,6 +236,16 @@
         </div>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var Typed = new Typed(".auto-input", {
+            strings: ["Alain Lumba", "Web Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
 
     <script>
         document.querySelectorAll('.image-container img').forEach(image => {
